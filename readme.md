@@ -1,7 +1,7 @@
 Express-QRCode
 ==============
  
-Add a qrcode image on page on ExpressJS.
+Add a qrcode image on page on ExpressJS using Google Charts.
     
 Please view example.txt for details.
     
