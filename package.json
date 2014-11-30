@@ -1,0 +1,24 @@
+{
+  "name": "express-qrcode",
+  "version": "1.0.0",
+  "description": "Add a QrCode Image on page on ExpressJS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IgorDePaula/express-qrcode.git"
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "qrcode"
+  ],
+  "author": "Igor Carvalho de Paula",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/IgorDePaula/express-qrcode/issues"
+  },
+  "homepage": "https://github.com/IgorDePaula/express-qrcode"
+}
