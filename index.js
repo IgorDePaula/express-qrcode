@@ -47,6 +47,14 @@ var qrcode = function (req, res, next) {
         var setCorrectionLevel = function (level, margin) {
             properties.push({name: 'chld', value: level + "|" + margin});
         }
+        
+        /**
+         * Set data to encode in QRCode
+         * @param {type} data
+         */
+        var setData = function (data) {
+            properties.push({name: 'chl', value: data});
+        }
 
     }
     
