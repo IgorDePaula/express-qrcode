@@ -66,6 +66,14 @@ var qrcode = function (req, res, next) {
             }).join("&");
             return (endpoint + parameters);
         }
+        
+         return {
+            setDimension: setDimension,
+            setCharset: setCharset,
+            setCorrectionLevel: setCorrectionLevel,
+            setData: setData,
+            getImage: getImage
+        }
 
     }
     
