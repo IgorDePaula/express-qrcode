@@ -21,8 +21,13 @@ var qrcode = function (req, res, next) {
         var properties = [];
         
         properties.push({name: 'cht', value: 'qr'});
+        
+        var setDimension = function (w, h) {
+            properties.push({name: 'chs', value: w + "x" + w});
+        }
 
     }
+    
     next();
 }
 
