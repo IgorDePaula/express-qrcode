@@ -55,6 +55,17 @@ var qrcode = function (req, res, next) {
         var setData = function (data) {
             properties.push({name: 'chl', value: data});
         }
+        
+        /**
+         * Generate the URL og QRCode Image
+         * @returns String
+         */
+        var getImage = function () {
+            var parameters = properties.map(function (elem) {
+                return elem.name + "=" + elem.value;
+            }).join("&");
+            return (endpoint + parameters);
+        }
 
     }
     
