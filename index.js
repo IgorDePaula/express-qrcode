@@ -38,6 +38,15 @@ var qrcode = function (req, res, next) {
         var setCharset = function (charset) {
             properties.push({name: 'choe', value: charset});
         }
+        
+        /**
+         * Set level of loss of content and margin of image
+         * @param String level Level of loss
+         * @param int margin Margin of image
+         */
+        var setCorrectionLevel = function (level, margin) {
+            properties.push({name: 'chld', value: level + "|" + margin});
+        }
 
     }
     
