@@ -22,8 +22,21 @@ var qrcode = function (req, res, next) {
         
         properties.push({name: 'cht', value: 'qr'});
         
+        /**
+         * Set dimension of image
+         * @param int w width
+         * @param int h height    
+         */
         var setDimension = function (w, h) {
             properties.push({name: 'chs', value: w + "x" + w});
+        }
+        
+        /**
+         * Set the charset of data
+         * @param String charset Charset of data
+         */
+        var setCharset = function (charset) {
+            properties.push({name: 'choe', value: charset});
         }
 
     }
