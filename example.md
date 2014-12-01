@@ -1,10 +1,13 @@
-//In app.js
-...
-var qrcode = require('express-qrcode');
-...
-app.use(qrcode);
-...
+#Examples
 
+```javascript
+// app.js
+var qrcode = require('express-qrcode');
+// ...
+app.use(qrcode);
+```
+
+```javascript
 //routes/index.js
 var express = require('express');
 var router = express.Router();
@@ -22,3 +25,4 @@ router.get('/', function(req, res) {
 });
 
 module.exports = router;
+```	
